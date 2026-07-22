@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+
+<body class="history">
+    <div class="navbar">
+        <h2>🌱 AutoPlant</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <!-- Title -->
+    <h1 class="page-title">💧 Watering History</h1>
+
+    <!-- Section -->
+    <div class="card" style="width: 80%;">
+        <h2 style="text-align:center;">📊 Recent Watering Activity</h2>
+
+        <table border="1" id="historyTable">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Moisture</th>
+                <th>Pump Status</th>
+                <th>Water Used</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="back-btn-container">
+        <a href="dashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

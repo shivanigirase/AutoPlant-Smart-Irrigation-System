@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AutoPlant</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+
+<body class="about">
+    <div class="navbar">
+        <h2>🌱 AutoPlant</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <h1 style="text-align:center;">📘 About Project</h1>
+    <div class="about-grid">
+
+
+        <!-- Problem -->
+        <div class="card">
+            <h2><i class="fas fa-exclamation-circle"></i> Problem Statement</h2>
+            <p>
+                Traditional plant watering requires manual effort and may lead to overwatering or
+                underwatering. This causes poor plant growth and water wastage.
+            </p>
+        </div>
+
+        <!-- Objective -->
+        <div class="card">
+            <h2><i class="fas fa-bullseye"></i> Project Objective</h2>
+            <p>
+                To build an automatic plant watering system using real-time sensor data to ensure
+                plants get proper water while reducing human effort.
+            </p>
+        </div>
+
+        <!-- Components -->
+        <div class="card">
+            <h2><i class="fas fa-microchip"></i> Components Used</h2>
+            <ul>
+                <li>ESP8266 (NodeMCU)</li>
+                <li>Soil Moisture Sensor</li>
+                <li>DHT11 Sensor</li>
+                <li>Rain Sensor</li>
+                <li>Relay Module</li>
+                <li>Water Pump</li>
+                <li>Firebase</li>
+                <li>Website</li>
+            </ul>
+        </div>
+
+        <!-- Architecture -->
+        <div class="card">
+            <h2><i class="fas fa-project-diagram"></i> System Architecture</h2>
+            <p>
+                Sensors collect data → ESP8266 sends to Firebase → Website displays data →
+                System controls pump automatically.
+            </p>
+        </div>
+
+        <!-- Working -->
+        <div class="card">
+            <h2><i class="fas fa-cogs"></i> Working</h2>
+            <p>
+                Sensors monitor moisture, temperature, and humidity. If soil is dry, pump turns ON.
+                If moisture is sufficient or rain is detected, pump turns OFF.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="card">
+            <h2><i class="fas fa-star"></i> Features</h2>
+            <ul>
+                <li>Real-time monitoring</li>
+                <li>Automatic irrigation</li>
+                <li>Weather-based control</li>
+                <li>Remote access</li>
+            </ul>
+        </div>
+
+        <!-- Advantages -->
+        <div class="card">
+            <h2><i class="fas fa-check-circle"></i> Advantages</h2>
+            <ul>
+                <li>Saves water</li>
+                <li>Reduces manual work</li>
+                <li>Improves plant growth</li>
+            </ul>
+        </div>
+
+        <!-- Limitations -->
+        <div class="card">
+            <h2><i class="fas fa-exclamation-triangle"></i> Limitations</h2>
+            <ul>
+                <li>Needs internet connection</li>
+                <li>Initial setup cost</li>
+            </ul>
+        </div>
+
+        <!-- Applications -->
+        <div class="card">
+            <h2><i class="fas fa-leaf"></i> Applications</h2>
+            <ul>
+                <li>Home gardening</li>
+                <li>Smart farming</li>
+                <li>Greenhouses</li>
+            </ul>
+        </div>
+
+        <!-- Future -->
+        <div class="card">
+            <h2><i class="fas fa-rocket"></i> Future Scope</h2>
+            <ul>
+                <li>Mobile app</li>
+                <li>AI-based watering</li>
+                <li>Multi-plant system</li>
+            </ul>
+        </div>
+
+        <!-- Tech -->
+        <div class="card">
+            <h2><i class="fas fa-laptop-code"></i> Technologies Used</h2>
+            <ul>
+                <li>HTML, CSS, JS</li>
+                <li>Firebase</li>
+                <li>ESP8266</li>
+                <li>Arduino IDE</li>
+            </ul>
+        </div>
+
+        <!-- Flow -->
+        <div class="card">
+            <h2><i class="fas fa-stream"></i> System Flow</h2>
+            <p style="text-align:center;">
+                Sensors → ESP8266 → Firebase → Website → Pump
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

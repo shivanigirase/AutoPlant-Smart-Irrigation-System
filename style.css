@@ -1,0 +1,643 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #e8f5e9;
+}
+
+h1 {
+    text-shadow: 0 0 10px #00c853;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    background: #1f5c3a;
+    color: white;
+
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+/* Table */
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical center */
+    align-items: center;
+    /* horizontal center */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title */
+.hero h1 {
+    font-size: 40px;
+    color: #0f7114;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.hero p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.index {
+    background: url("plant3.jpeg") center/cover;
+}
+
+.dashboard {
+    background: url("d2.jpeg") center/cover;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.weather-card {
+    text-align: center;
+}
+
+.weather-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.weather-box img {
+    width: 60px;
+}
+
+#weatherTemp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00c853;
+}
+
+#weatherDesc {
+    color: #94a3b8;
+}
+
+.dashboard .card {
+    background: rgb(231, 229, 229);
+    /* makes box white */
+    color: black;
+    /* text visible */
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Make cards full width inside grid */
+.about-grid .card {
+    width: 100%;
+}
+
+.about .card {
+    background: rgb(204, 196, 196);
+    /* 👈 makes it white */
+    color: black;
+    /* text visible */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.about-grid .card {
+    width: 100%;
+    border-left: 5px solid #00c853;
+    /* default */
+}
+
+/* alternate colors */
+.about-grid .card:nth-child(2) {
+    border-left: 5px solid #3b82f6;
+}
+
+.about-grid .card:nth-child(3) {
+    border-left: 5px solid #f59e0b;
+}
+
+.about-grid .card:nth-child(4) {
+    border-left: 5px solid #ef4444;
+}
+
+.about-grid .card:nth-child(5) {
+    border-left: 5px solid #8b5cf6;
+}
+
+.about-grid .card:nth-child(6) {
+    border-left: 5px solid #14b8a6;
+}
+
+.about-grid .card:nth-child(7) {
+    border-left: 5px solid #3b82f6;
+}
+
+.about-grid .card:nth-child(8) {
+    border-left: 5px solid #f59e0b;
+}
+
+.about-grid .card:nth-child(9) {
+    border-left: 5px solid #ef4444;
+}
+
+.about-grid .card:nth-child(10) {
+    border-left: 5px solid #8b5cf6;
+}
+
+.about-grid .card:nth-child(11) {
+    border-left: 5px solid #14b8a6;
+}
+
+.about-grid .card:nth-child(12) {
+    border-left: 5px solid #ef4444;
+}
+
+.about-grid .card:nth-child(13) {
+    border-left: 5px solid #8b5cf6;
+}
+
+.about-grid .card:nth-child(14) {
+    border-left: 5px solid #14b8a6;
+}
+
+.features-page {
+    background: url("plant.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* overlay */
+.features-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    color: #00c853;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+.feature-card {
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Different colors */
+.feature-card:nth-child(1) {
+    border-left: 5px solid #00c853;
+}
+
+.feature-card:nth-child(2) {
+    border-left: 5px solid #3b82f6;
+}
+
+.feature-card:nth-child(3) {
+    border-left: 5px solid #f59e0b;
+}
+
+.feature-card:nth-child(4) {
+    border-left: 5px solid #ef4444;
+}
+
+.dashboard-title {
+    text-align: center;
+    color: #ffffff;
+    /* green */
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.dashboard-title {
+    text-shadow: 0 0 10px #00c853;
+}
+
+.about {
+    background: url("d2.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-page {
+    background: url("c1.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.login {
+    background: url("plant3.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.registers {
+    background: url("plant3.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-card {
+    width: 350px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.contact-card button {
+    width: 100%;
+    padding: 10px;
+    background: #00c853;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    background: #22c55e;
+}
+
+body.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-card {
+    width: 320px;
+    margin-top: 80px;
+    padding: 25px;
+    border-radius: 15px;
+
+    background: rgb(180, 178, 178);
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: #1f5c3a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #22c55e;
+}
+
+/* FULL PAGE CENTER */
+.login-page {
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+    height: 100vh;
+    /* full screen height */
+
+    background: url("plant3.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* DARK OVERLAY */
+.login-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(224, 221, 221, 0.575);
+    z-index: -1;
+}
+
+/* SAME BACKGROUND AS LOGIN */
+.register-page {
+    background: url("plant3.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* DARK OVERLAY */
+.register-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(155, 150, 150, 0.5);
+    z-index: -1;
+}
+
+/* CENTER CARD */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD STYLE (same as login) */
+.card {
+    background: rgba(124, 122, 122, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    color: rgb(9, 8, 8);
+}
+
+/* INPUTS */
+.card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BUTTON */
+.card button {
+    width: 100%;
+    padding: 12px;
+    background: #1f5c3a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #00b44b;
+}
+
+.page-title {
+    margin-top: 100px;
+    /* pushes content below navbar */
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+.dashboard {
+    padding-top: 110px;
+}
+
+.about {
+    padding-top: 110px;
+}
+
+.contact-page {
+    padding-top: 110px;
+}
+
+/* Back Button Center */
+.back-btn-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Green Button */
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00c853;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: #00b44b;
+    transform: scale(1.05);
+}
+
+/* Back Button Center */
+.back-btn-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Green Button */
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00c853;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.back-btn:hover {
+    background: #00b44b;
+    transform: scale(1.05);
+}
+
+.back-btn {
+    box-shadow: 0 4px 10px rgba(230, 230, 230, 0.977);
+}
+
+.history {
+    background: url("plant.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.history .page-title {
+    color: #033f1c;
+    text-shadow: 0 0 10px #00c853;
+    /* green */
+}
+
+.weather-icon {
+    width: 80px;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* glow effect */
+.weather-card {
+    box-shadow: 0 0 15px rgba(0, 200, 83, 0.6);
+}
+
+/* HISTORY PAGE WHITE CARD */
+body.history .card {
+    background: rgba(251, 246, 246, 0.933) !important;
+    color: black;
+}
+
+body.history table {
+    width: 100%;
+    text-align: center;
+}
+
+body.history th {
+    background: #00c853;
+    color: white;
+}
+
+body.history td {
+    background: #f9f9f9;
+}
+
+.chart-card {
+    width: 80%;
+    height: 400px;
+    background: white !important;
+}
+
+#myChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.weather-box img {
+    width: 80px;
+    height: 80px;
+    animation: floatWeather 3s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes floatWeather {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

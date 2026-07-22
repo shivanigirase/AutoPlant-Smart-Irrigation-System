@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Features</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+
+<body class="features-page">
+
+    <!-- Navbar here -->
+    <div class="navbar">
+        <h2>🌱 AutoPlant</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <!-- Title -->
+    <h1 class="page-title"> Features</h1>
+
+    <!-- Grid -->
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <h2><i class="fas fa-tint"></i> Moisture Detection</h2>
+            <p>
+                The system continuously monitors soil moisture using sensors.
+                It detects whether the soil is dry or wet and sends real-time data
+                to the website for monitoring.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h2><i class="fas fa-water"></i> Automatic Pump</h2>
+            <p>
+                When the soil becomes dry, the system automatically turns ON the pump.
+                If the soil has enough moisture, the pump turns OFF to save water.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h2><i class="fas fa-chart-line"></i> Smart Dashboard</h2>
+            <p>
+                A user-friendly dashboard displays real-time data like moisture,
+                temperature, and humidity with graphs and live updates.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <h2><i class="fas fa-wifi"></i> Wi-Fi Connectivity</h2>
+            <p>
+                The system uses ESP8266 Wi-Fi module to send data to Firebase,
+                allowing remote monitoring and control from anywhere.
+            </p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

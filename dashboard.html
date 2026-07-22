@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+
+<body class="dashboard">
+
+    <div class="navbar">
+        <h2>🌱 AutoPlant</h2>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="history.html">History</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <h1 class="dashboard-title">🌱 Dashboard</h1>
+
+    <div class="card">
+        <p>Moisture: <span id="moisture">--</span></p>
+        <p>Temperature: <span id="temp">--</span></p>
+        <p>Humidity: <span id="humidity">--</span>%</p>
+        <p>Water Tank Level: <span id="waterLevel">--</span>%</p>
+    </div>
+    </div>
+
+
+
+    <div class="card weather-card">
+        <h3>🌦 Weather</h3>
+
+        <div class="weather-box">
+            <img id="weatherIcon" src="" alt="weather">
+
+            <div>
+                <p id="weatherTemp">--°C</p>
+                <p id="weatherDesc">--</p>
+                <p id="weatherCity">Ahmedabad</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <p>Pump: <span id="pump">--</span></p>
+        <button onclick="togglePump()">Toggle Pump</button>
+    </div>
+
+    <div class="card">
+        <button onclick="logout()">Logout</button>
+    </div>
+    <div class="card chart-card">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
